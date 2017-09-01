@@ -52,10 +52,7 @@ func InitYtxAndNewReqJsonBody(phone string) []byte {
 		fmt.Println(err)
 	}
 
-	fmt.Println(vinfo.auth)
-
-	vinfo.auth.SetSid(vinfo.auth.sid)
-	vinfo.auth.SetToken(vinfo.auth.token)
+	//fmt.Println(vinfo.auth)
 
 	vinfo.vn = YtxVoiceNotifyParam{
 		AppId:      vinfo.auth.appId,
